@@ -197,6 +197,8 @@ typedef void(^layoutBlock)(GKPhotoBrowser *photoBrowser, CGRect superFrame);
 
 /// 保存按钮，默认隐藏
 @property (nonatomic, strong) UIButton *saveBtn;
+@property (nonatomic, assign) CGFloat saveBtnBottom;
+@property (nonatomic, assign) CGFloat saveBtnRight;
 
 /// 加载失败时显示的文字或图片
 @property (nonatomic, copy) NSString    *failureText;

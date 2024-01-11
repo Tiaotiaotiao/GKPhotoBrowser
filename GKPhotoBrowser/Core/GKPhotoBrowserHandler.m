@@ -141,6 +141,8 @@
 #pragma mark - BrowserDismiss
 - (void)browserDismiss {
     GKPhotoView *photoView = self.browser.curPhotoView;
+    self.browser.saveBtn.hidden = YES;
+    
     photoView.isLayoutSubViews = YES;
     
     if (!self.browser.isFollowSystemRotation) {

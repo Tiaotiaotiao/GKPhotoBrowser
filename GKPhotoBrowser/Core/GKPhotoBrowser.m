@@ -1017,7 +1017,7 @@ static Class progressClass = nil;
     
     CGSize size = [self.pageControl sizeForNumberOfPages:self.photos.count];
     self.pageControl.bounds = CGRectMake(0, 0, size.width, size.height);
-    self.pageControl.center = CGPointMake(centerX, centerY);
+    self.saveBtn.center = CGPointMake(self.saveBtnRight ? width - self.saveBtnRight - self.saveBtn.frame.size.width * 0.5 : width - 60, self.saveBtnRight ? centerY - self.saveBtnBottom - self.saveBtn.frame.size.height * 0.5 : centerY - 20);
     self.saveBtn.center = CGPointMake(width - 60, centerY);
     self.progressView.center = CGPointMake(centerX, centerY);
     if ([self.progress respondsToSelector:@selector(updateLayoutWithFrame:)]) {
